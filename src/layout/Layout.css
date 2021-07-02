@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.container{
+  background: linear-gradient(0deg, rgb(255, 185, 198), rgb(105, 79, 246));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main{
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  max-width: 680px;
+}
+
+.user_avatar{
+  margin: auto;
+}
