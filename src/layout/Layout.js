@@ -11,27 +11,31 @@ export const Layout = () => {
 
   return (
     <div className='container'>
-      <div className='main'>
-        <div className='user_avatar'>
-          <Avatar
-            user_avatar={User.avatar.default}
-            fullname={User.name}
-            username={User.username}
-            description={User.description}
-          />
-        </div>
-        {Links.map((item) => {
-          return (
-            <Link
-              key={item.id}
-              icon_name={item.icon.default}
-              name={item.name}
-              link={item.link}
-              alt=""
-            ></Link>
-          );
-        })}
-      </div>
+      <header>
+        <Avatar
+          user_avatar={User.avatar.default}
+          fullname={User.name}
+          username={User.username}
+          description={User.description}
+        />
+      </header>
+      <main>
+        <ul>
+          {Links.map((item) => {
+            return (
+              <li>
+                <Link
+                  key={item.id}
+                  icon_name={item.icon.default}
+                  name={item.name}
+                  link={item.link}
+                  alt=""
+                ></Link>
+              </li>
+            );
+          })}
+        </ul>
+      </main>
     </div>
   )
 }

@@ -2,15 +2,10 @@
 
 .avatar_div{
   text-align: center;
-  padding-top: 30px;
 }
 
 .avatar{
   border-radius: 50px;
-}
-
-.text_div{
-  padding-top: 15px;
 }
 
 .text{
@@ -21,7 +16,7 @@
 }
 
 .title{
-  font-size: 28px;
+  font-size: 1.7rem;
 }
 
 .subtitle{
